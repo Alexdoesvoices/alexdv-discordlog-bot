@@ -1,0 +1,13 @@
+{
+  "name": "alexdv-discordlog-bot",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "discord.js": "^14.25.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
