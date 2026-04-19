@@ -19,7 +19,9 @@ const client = new Client({
   partials: [Partials.Message, Partials.Channel],
 });
 
-
+client.once(Events.ClientReady, async (c) => {
+  console.log('Ready');
+});
 
 
 client.login(process.env.DISCORD_TOKEN);
