@@ -10,8 +10,9 @@ import {
   TextChannel,
 } from "discord.js";
 import { Database } from "bun:sqlite";
-
 const TOKEN = process.env.DISCORD_TOKEN;
+const db = new Database("message_cache.sqlite", { create: true });
+db.run("CREATE TABLE IF NOT EXISTS messages (id TEXT PRIMARY KEY, content TEXT, authorTag TEXT, authorId TEXT, channelId TEXT, timestamp INTEGER)");
 
 const client = new Client({
   intents: [
