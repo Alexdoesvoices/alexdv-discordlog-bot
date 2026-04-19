@@ -11,16 +11,14 @@ import {
 import { Database } from "bun:sqlite";
 
 
-
-//* Define client:
 const client = new Client({
   intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, 
+    GatewayIntentBits.MessageContent
   ],
   partials: [Partials.Message, Partials.Channel],
 });
+
 
 
 
