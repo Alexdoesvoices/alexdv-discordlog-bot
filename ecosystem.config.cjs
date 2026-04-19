@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-      name: "alb",
+      name: "alex log bot",
       script: "bun",
       args: "run bot.ts",
       exec_mode: "fork",
