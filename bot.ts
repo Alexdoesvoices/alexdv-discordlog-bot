@@ -28,8 +28,7 @@ const client = new Client({
 
 client.once(Events.ClientReady, async (c) => {
   console.log("Ready");
-  console.log(LOG_CHANNEL)
-  c.user.setActivity("Hey people");
+  c.user.setActivity("Hey peeps");
 });
 
 client.login(TOKEN);
